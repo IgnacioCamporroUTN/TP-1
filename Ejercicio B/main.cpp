@@ -26,21 +26,29 @@ int main()
     cout << " ----------------------------- "<< endl;
 
 
+
+
+    if(m3==0&&b3==0){
+
+         cout << " Sus rectas son Coincidentes"<< endl;
+    }
+
+    if(m1==m2&&b1!=b2){
+               cout << " Sus rectas son paralelas, no existe interseccion"<< endl;
+    }
+
+    if(m1!=m2){
+
+
     m3=m1-m2;
     b3=b2-b1;
     x=b3/m3;
 
     y = m1 * x + b1;
 
-    if(m3==0&&b3==0){
+    cout<< "Sus rectas son perpendiculares, la interseccion es:"<<endl;
 
-         cout << " Sus rectas son Coincidentes, no existe interseccion"<< endl;
-    }
 
- if(m1==m2&&b1!=b2){
-               cout << " Sus rectas son paralelas, no existe interseccion"<< endl;
-    }
-    if(m1!=m2){  cout<< "Sus rectas son perpendiculares, la interseccion es:"<<endl;
     cout<<"("<<x<<","<<y<<")"<<endl;
     }
 
